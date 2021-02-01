@@ -1,0 +1,46 @@
+.container {
+  background-color: rgb(230, 225, 230);
+  width: 70vw;
+  height: 250px;
+  position: relative;
+}
+.note {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+}
+.btn {
+  color: white;
+  position: absolute;
+}
+#btnGroup {
+  display: flex;
+}
+.item {
+  display: flex;
+  margin-top: 5px;
+}
+#allNote {
+  position: relative;
+  counter-reset: section;
+  list-style-type: none;
+  width: 400px;
+  position: relative;
+}
+.item::before {
+  counter-increment: section;
+  content: counter(section) ". ";
+}
+.editBtn {
+  right: 60px;
+  background-color: green;
+}
+.deleteBtn {
+  background-color: orangered;
+  margin-left: 5px;
+  right: 0;
+}
+#todo {
+  margin-left: 10px;
+}
+
